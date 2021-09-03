@@ -25,4 +25,4 @@ app.post('/',(req,res)=>{
   res.send(result);
 })
 
-app.listen(3000,()=>console.log('Your host 3000 is listening...'))
+app.listen(process.env.PORT||3000,()=>console.log('Your host 3000 is listening...'))
