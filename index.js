@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-
+const BGround = require('fcc-express-background')
 const myApp = require('./myApp')
 
 app.get('/',(req,res)=>{
@@ -25,4 +25,8 @@ app.post('/',(req,res)=>{
   res.send(result);
 })
 
-app.listen(process.env.PORT||3000,()=>console.log('Your host 3000 is listening...'))
+// app.listen(process.env.PORT||3000,()=>console.log('Your host 3000 is listening...'))
+var port = process.env.PORT || 3000;
+BGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function(){
+  BGround.log('Node is listening on port '+ port + '...')
+});
