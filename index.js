@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/',(req,res)=>{
     console.dir(res) // false
-  res.send('OK')
+  res.send('Hello Express')
   console.dir(res.headersSent) // true
 });
 
