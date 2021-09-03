@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-
+const myApp = require('./myApp')
 
 app.get('/',(req,res)=>{
     console.dir(res) // false
