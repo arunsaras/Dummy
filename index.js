@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const BGround = require('fcc-express-background')
+const BGround = require('fcc-express-bground')
 const myApp = require('./myApp')
 
 app.get('/',(req,res)=>{

@@ -19,8 +19,8 @@
   "homepage": "https://github.com/arunsaras/Dummy#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "fcc-express-background": "^0.0.2",
     "install": "^0.13.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
   }
 }
